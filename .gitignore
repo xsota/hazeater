@@ -1,3 +1,9 @@
+uv.lock
+*.egg-info/
+*.egg
+.eggs/
+.venv/
+
 # IDEA
 /.idea/
 *.iml
