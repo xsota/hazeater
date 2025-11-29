@@ -3,12 +3,12 @@ from typing import Deque
 
 from hazeater.broker.broker_base import BrokerBase
 from hazeater.core.types import Bar, OrderSpec, ExitDecision
-from hazeater.data.market_data_feed_base import MarketDataFeedBase
+from hazeater.feeds import FeedBase
 from hazeater.strategy.strategy_base import StrategyBase
 
 
 def run_loop(
-        feed: MarketDataFeedBase,
+        feed: FeedBase,
         broker: BrokerBase,
         strategy: StrategyBase,
         symbol: str,
